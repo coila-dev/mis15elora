@@ -485,17 +485,26 @@ p{
     align-content:center;
     color: white;
   } */
-   .separador-0 {
+
+  .separador-0 {
     padding: 0;
-    background-color: white; /* Color de respaldo si la imagen falla */
-    background-image: url(../img/img-separador-0.png); /* <-- Cambio clave */
-    background-size: cover;
+    background-color: white;
+    background-image: url(../img/img-separador-0.png);
     background-repeat: no-repeat;
-    background-position: center; /* <-- Añadido recomendado */
-    height: 585px;
+    background-position: center;
+    
+    /* Prefijos para navegadores antiguos */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; /* El estándar siempre al final */
+
+    height: 585.21px;
     align-content: center;
     color: white;
-  } 
+}
+
+
   .separador-1{
     padding: 0;
     background-color: white;
