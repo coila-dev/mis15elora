@@ -314,7 +314,7 @@ p{
     padding: 0.7rem 0rem;
 }
 .frase1{
-    padding: 1em 4em;
+    padding: 3em 5em;
     /* color: #475c78; */
 }
 
@@ -512,6 +512,12 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* <-- Añadido recomendado */
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; /* El estándar siempre al final */
+
     height: 350.3px;
     align-content:center;
     color: white;
